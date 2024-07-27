@@ -88,13 +88,17 @@ public class Main {
                     numero1 = scanner.nextDouble();
                     System.out.print("Ingrese el cateto número 2: ");
                     numero2 = scanner.nextDouble();
-                    System.out.println("Resultado: " + miCalculadora.Hipotenusa(numero1, numero2));
+                    System.out.println("Resultado: " + miCalculadora.hipotenusa(numero1, numero2));
                     break;
 
                 case 10:
                     System.out.print("Ingrese el radio del círculo: ");
                     numero1 = scanner.nextDouble();
                     System.out.println("Resultado: " + miCalculadora.perimetroCirculo(numero1));
+                    break;
+
+                case 11:
+                    miCalculadora.mostrarHistorial();
                     break;
 
                 default:
@@ -134,6 +138,7 @@ public class Main {
         System.out.println("8. Coseno");
         System.out.println("9. Hipotenusa");
         System.out.println("10. Perímetro de un círculo");
+        System.out.println("11. Mostrar historial");
         System.out.print("Seleccione una opción: ");
     }
 }
